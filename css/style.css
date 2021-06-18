@@ -1720,6 +1720,13 @@ body.ie ._ibg img {
   color: #6a3f24;
 }
 
+.dog-animals__title span {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: lowercase;
+  padding: 0px 0px 0px 15px;
+}
+
 .dog-animals__link {
   font-style: normal;
   font-weight: 500;
@@ -1773,6 +1780,13 @@ body.ie ._ibg img {
           align-items: center;
   text-transform: uppercase;
   color: #6a3f24;
+}
+
+.cat-animals__title span {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: lowercase;
+  padding: 0px 0px 0px 15px;
 }
 
 .cat-animals__link {
@@ -1848,6 +1862,7 @@ body.ie ._ibg img {
 
 .info-advantages {
   text-align: center;
+  max-width: 280px;
 }
 
 .info-advantages__img {
@@ -1923,9 +1938,17 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
+.info-technologies {
+  max-width: 335px;
+}
+
 .info-technologies__img {
   text-align: center;
   padding: 0px 0px 40px 0px;
+}
+
+.info-technologies__title {
+  padding: 0px 0px 20px 0px;
 }
 
 .info-technologies__title h5 {
@@ -2165,9 +2188,37 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 1521px) {
+  .reviews-arrows-left {
+    left: 2%;
+  }
+
+  .reviews-arrows-right {
+    right: 7%;
+  }
+}
+
+@media (max-width: 1321px) {
+  .reviews-arrows-left {
+    left: 2%;
+  }
+
+  .reviews-arrows-right {
+    right: 7%;
+  }
+}
+
 @media (max-width: 1192px) {
   ._container {
     max-width: 970px;
+  }
+
+  .reviews-arrows-left {
+    left: 2%;
+  }
+
+  .reviews-arrows-right {
+    right: 7%;
   }
 }
 
