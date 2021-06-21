@@ -63,7 +63,7 @@ if (location.hash) {
 let iconMenu = document.querySelector(".icon-menu");
 if (iconMenu != null) {
 	let delay = 500;
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".bottom-header-mob__list");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
 			body_lock(delay);
@@ -74,7 +74,7 @@ if (iconMenu != null) {
 };
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".bottom-header-mob__list");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
@@ -527,6 +527,124 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var dropdown = document.getElementsByClassName("dropdown");
+var attribute;
+var myFunction = function () {
+	attribute = this.getAttribute("data-target");
+	let x = document.getElementById(attribute);
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+};
+for (var i = 0; i < dropdown.length; i++) {
+	dropdown[i].addEventListener('click', myFunction, false);
+}
+
+
+
+let dropdownTwo = document.getElementsByClassName("dropdown-two");
+let attributeTwo;
+let myFunctionTwo = function () {
+	attributeTwo = this.getAttribute("data-target-two");
+	let xTwo = document.getElementById(attributeTwo);
+	if (xTwo.style.display === "none") {
+		xTwo.style.display = "block";
+	} else {
+		xTwo.style.display = "none";
+	}
+
+};
+for (let i = 0; i < dropdownTwo.length; i++) {
+	dropdownTwo[i].addEventListener('click', myFunctionTwo, false);
+}
+
+
+
+let dropdownThree = document.getElementsByClassName("dropdown-three");
+let attributeThree;
+let myFunctionThree = function () {
+	attributeThree = this.getAttribute("data-target-three");
+	let xThree = document.getElementById(attributeThree);
+	if (xThree.style.display === "none") {
+		xThree.style.display = "block";
+	} else {
+		xThree.style.display = "none";
+	}
+
+};
+for (let i = 0; i < dropdownThree.length; i++) {
+	dropdownThree[i].addEventListener('click', myFunctionThree, false);
+}
+
+
+
+let dropdownFour = document.getElementsByClassName("dropdown-four");
+let attributeFour;
+let myFunctionFour = function () {
+	attributeFour = this.getAttribute("data-target-four");
+	let xFour = document.getElementById(attributeFour);
+	if (xFour.style.display === "none") {
+		xFour.style.display = "block";
+	} else {
+		xFour.style.display = "none";
+	}
+
+};
+for (let i = 0; i < dropdownFour.length; i++) {
+	dropdownFour[i].addEventListener('click', myFunctionFour, false);
+}
+
+let dropdownFive = document.getElementsByClassName("dropdown-five");
+let attributeFive;
+let myFunctionFive = function () {
+	attributeFive = this.getAttribute("data-target-five");
+	let xFive = document.getElementById(attributeFive);
+	if (xFive.style.display === "none") {
+		xFive.style.display = "block";
+	} else {
+		xFive.style.display = "none";
+	}
+
+};
+for (let i = 0; i < dropdownFive.length; i++) {
+	dropdownFive[i].addEventListener('click', myFunctionFive, false);
+}
+
+
+let dropdownSix = document.getElementsByClassName("dropdown-six");
+let attributeSix;
+let myFunctionSix = function () {
+	attributeSix = this.getAttribute("data-target-six");
+	let xSix = document.getElementById(attributeSix);
+	if (xSix.style.display === "none") {
+		xSix.style.display = "block";
+	} else {
+		xSix.style.display = "none";
+	}
+
+};
+for (let i = 0; i < dropdownSix.length; i++) {
+	dropdownSix[i].addEventListener('click', myFunctionSix, false);
+}
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
@@ -1499,27 +1617,31 @@ let slider_about = new Swiper('.reviews__content', {
 		nextEl: '.reviews-arrows-right',
 		prevEl: '.reviews-arrows-left',
 	},
-	/*
+
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			autoHeight: true,
 		},
+		479: {
+			slidesPerView: 2,
+			spaceBetween: 0,
+		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 0,
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 0,
 		},
 		1268: {
 			slidesPerView: 4,
 			spaceBetween: 30,
 		},
 	},
-	*/
+
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -1560,27 +1682,31 @@ let slider_video = new Swiper('.video-slider__content', {
 		nextEl: '.video-slider-arrows-right',
 		prevEl: '.video-slider-arrows-left',
 	},
-	/*
+
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 10,
 			autoHeight: true,
+		},
+		479: {
+			slidesPerView: 2,
+			spaceBetween: 10,
 		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 0,
 		},
 		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
+			slidesPerView: 4,
+			spaceBetween: 0,
 		},
 		1268: {
 			slidesPerView: 4,
-			spaceBetween: 30,
+			spaceBetween: 0,
 		},
 	},
-	*/
+
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -1591,4 +1717,167 @@ let slider_video = new Swiper('.video-slider__content', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+// Dynamic Adapt v.1
+// HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
+// e.x. data-da=".item,992,2"
+// Andrikanych Yevhen 2020
+// https://www.youtube.com/c/freelancerlifestyle
+
+"use strict";
+
+
+function DynamicAdapt(type) {
+	this.type = type;
+}
+
+DynamicAdapt.prototype.init = function () {
+	const _this = this;
+	// массив объектов
+	this.оbjects = [];
+	this.daClassname = "_dynamic_adapt_";
+	// массив DOM-элементов
+	this.nodes = document.querySelectorAll("[data-da]");
+
+	// наполнение оbjects объктами
+	for (let i = 0; i < this.nodes.length; i++) {
+		const node = this.nodes[i];
+		const data = node.dataset.da.trim();
+		const dataArray = data.split(",");
+		const оbject = {};
+		оbject.element = node;
+		оbject.parent = node.parentNode;
+		оbject.destination = document.querySelector(dataArray[0].trim());
+		оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : "767";
+		оbject.place = dataArray[2] ? dataArray[2].trim() : "last";
+		оbject.index = this.indexInParent(оbject.parent, оbject.element);
+		this.оbjects.push(оbject);
+	}
+
+	this.arraySort(this.оbjects);
+
+	// массив уникальных медиа-запросов
+	this.mediaQueries = Array.prototype.map.call(this.оbjects, function (item) {
+		return '(' + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
+	}, this);
+	this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (item, index, self) {
+		return Array.prototype.indexOf.call(self, item) === index;
+	});
+
+	// навешивание слушателя на медиа-запрос
+	// и вызов обработчика при первом запуске
+	for (let i = 0; i < this.mediaQueries.length; i++) {
+		const media = this.mediaQueries[i];
+		const mediaSplit = String.prototype.split.call(media, ',');
+		const matchMedia = window.matchMedia(mediaSplit[0]);
+		const mediaBreakpoint = mediaSplit[1];
+
+		// массив объектов с подходящим брейкпоинтом
+		const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
+			return item.breakpoint === mediaBreakpoint;
+		});
+		matchMedia.addListener(function () {
+			_this.mediaHandler(matchMedia, оbjectsFilter);
+		});
+		this.mediaHandler(matchMedia, оbjectsFilter);
+	}
+};
+
+DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
+	if (matchMedia.matches) {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i];
+			оbject.index = this.indexInParent(оbject.parent, оbject.element);
+			this.moveTo(оbject.place, оbject.element, оbject.destination);
+		}
+	} else {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i];
+			if (оbject.element.classList.contains(this.daClassname)) {
+				this.moveBack(оbject.parent, оbject.element, оbject.index);
+			}
+		}
+	}
+};
+
+// Функция перемещения
+DynamicAdapt.prototype.moveTo = function (place, element, destination) {
+	element.classList.add(this.daClassname);
+	if (place === 'last' || place >= destination.children.length) {
+		destination.insertAdjacentElement('beforeend', element);
+		return;
+	}
+	if (place === 'first') {
+		destination.insertAdjacentElement('afterbegin', element);
+		return;
+	}
+	destination.children[place].insertAdjacentElement('beforebegin', element);
+}
+
+// Функция возврата
+DynamicAdapt.prototype.moveBack = function (parent, element, index) {
+	element.classList.remove(this.daClassname);
+	if (parent.children[index] !== undefined) {
+		parent.children[index].insertAdjacentElement('beforebegin', element);
+	} else {
+		parent.insertAdjacentElement('beforeend', element);
+	}
+}
+
+// Функция получения индекса внутри родителя
+DynamicAdapt.prototype.indexInParent = function (parent, element) {
+	const array = Array.prototype.slice.call(parent.children);
+	return Array.prototype.indexOf.call(array, element);
+};
+
+// Функция сортировки массива по breakpoint и place 
+// по возрастанию для this.type = min
+// по убыванию для this.type = max
+DynamicAdapt.prototype.arraySort = function (arr) {
+	if (this.type === "min") {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0;
+				}
+
+				if (a.place === "first" || b.place === "last") {
+					return -1;
+				}
+
+				if (a.place === "last" || b.place === "first") {
+					return 1;
+				}
+
+				return a.place - b.place;
+			}
+
+			return a.breakpoint - b.breakpoint;
+		});
+	} else {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0;
+				}
+
+				if (a.place === "first" || b.place === "last") {
+					return 1;
+				}
+
+				if (a.place === "last" || b.place === "first") {
+					return -1;
+				}
+
+				return b.place - a.place;
+			}
+
+			return b.breakpoint - a.breakpoint;
+		});
+		return;
+	}
+};
+
+const da = new DynamicAdapt("max");
+da.init();
 
