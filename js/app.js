@@ -1634,11 +1634,11 @@ let slider_about = new Swiper('.reviews__content', {
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 0,
+			spaceBetween: 20,
 		},
 		1268: {
-			slidesPerView: 4,
-			spaceBetween: 30,
+			slidesPerView: 3,
+			spaceBetween: 20,
 		},
 	},
 
