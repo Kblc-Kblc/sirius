@@ -840,7 +840,21 @@ for (let i = 0; i < dropdownSix.length; i++) {
 	dropdownSix[i].addEventListener('click', myFunctionSix, false);
 }
 
+let dropdownSeven = document.getElementsByClassName("dropdown-seven");
+let attributeSeven;
+let myFunctionSeven = function () {
+	attributeSeven = this.getAttribute("data-target-seven");
+	let xSeven = document.getElementById(attributeSeven);
+	if (xSeven.style.display === "none") {
+		xSeven.style.display = "block";
+	} else {
+		xSeven.style.display = "none";
+	}
 
+};
+for (let i = 0; i < dropdownSeven.length; i++) {
+	dropdownSeven[i].addEventListener('click', myFunctionSeven, false);
+}
 
 
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
@@ -1830,14 +1844,14 @@ let slider_about = new Swiper('.reviews__content', {
 			slidesPerView: 2,
 			spaceBetween: 0,
 		},
-		992: {
+		1180: {
 			slidesPerView: 3,
 			spaceBetween: 20,
 		},
-		1268: {
-			slidesPerView: 3,
-			spaceBetween: 20,
-		},
+		// 1268: {
+		// 	slidesPerView: 3,
+		// 	spaceBetween: 20,
+		// },
 	},
 
 	on: {
@@ -1887,22 +1901,22 @@ let slider_video = new Swiper('.video-slider__content', {
 			spaceBetween: 10,
 			autoHeight: true,
 		},
-		479: {
-			slidesPerView: 2,
+		564: {
+			slidesPerView: 1,
 			spaceBetween: 10,
 		},
 		768: {
 			slidesPerView: 2,
 			spaceBetween: 0,
 		},
-		992: {
+		1180: {
 			slidesPerView: 4,
 			spaceBetween: 0,
 		},
-		1268: {
-			slidesPerView: 4,
-			spaceBetween: 0,
-		},
+		// 1268: {
+		// 	slidesPerView: 4,
+		// 	spaceBetween: 0,
+		// },
 	},
 
 	on: {
